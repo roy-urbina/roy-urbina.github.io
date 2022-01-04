@@ -293,6 +293,7 @@ a.abt-proj-btn:hover{
 }
 .res-btn{
     z-index: 1;
+    cursor: pointer;
     background: transparent;
     padding: 10px 45px;
     margin-left: 13.5vw;
@@ -303,6 +304,7 @@ a.abt-proj-btn:hover{
     border: 1px solid rgb(255, 255, 255);
 }
 a.res-btn:link, a.res-btn:visited{
+    cursor: pointer;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
