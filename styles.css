@@ -1,15 +1,10 @@
-/* START NAVIGATION CSS RENDERING */
+body{
+    width: 100%;
+}
 .navigation{
-    background: rgb(255, 255, 255);
-    opacity: 0.95;
-    overflow: hidden;
-    width: 85%;
     margin: 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 50px 25px 25px 25px;
+    width: 80%;
+    padding: 50px 25px;
 }
 nav{
     float: right;
@@ -17,7 +12,6 @@ nav{
 nav ul{
     list-style: none;
     margin: 0;
-    padding-top: 5px;
 }
 nav li{
     display: inline;
@@ -25,360 +19,32 @@ nav li{
     margin-left: 2vw;
 }
 nav a{
-    text-transform: uppercase;
-    font-size: 15px;
     text-decoration: none;
+    text-transform: uppercase;
     transition: all 0.3s ease;
-    color: rgb(33, 48, 58);
+    font-size: 15px;
+    color: black;
 }
 nav a:hover{
-    color: rgb(10, 128, 206);
+    color: blue;
 }
 .navigation::before{
     content: "Roy Alexander Urbina";
+    font-size: 25px;
+    color: black;
     font-weight: 600;
-    font-size: 26.5px;
-    color: rgb(33, 48, 58);
+    float: left;
+    padding-bottom: 25px;
 }
 .navigation::after{
-    content: " / COLLEGE STUDENT";
-    color: rgb(45, 58, 68);
-    font-size: 20px;
-    font-weight: 600;
-    font-style: italic
+    content: "/ COLLEGE STUDENT";
+    color: grey;
+    font-size: 25px;
+    font-style: italic;
 }
-/* END NAVIGATION CSS RENDERING */
-
-/* START FOOTER CSS RENDERING */
-.footer{
-    overflow: hidden;
-    width: 85%;
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 50px 25px 25px 25px;
-}
-footer{
-    float: right;
-}
-footer ul{
-    font-size: 15px;
-    list-style: none;
-    margin: 0;
-    padding-top: 5px;
-}
-footer li{
-    text-transform: uppercase;
-    display: inline;
-    text-align: center;
-    margin-left: 2vw;
-}
-footer a{
-    text-transform: uppercase;
-    font-size: 15px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    color: rgb(33, 48, 58);
-}
-.footer::before{
-    content: "Roy Alexander Urbina";
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: left;
-    color: rgb(33, 48, 58);
-}
-.footer-heading{
-    text-transform: uppercase;
-    font-size: 15px;
-    color: rgb(33, 48, 58);
-    margin-left: 7.5vw;
-}
-.call-footer-btn{
-    margin-left: 6vw;
-}
-.call-footer-btn:hover{
-    color: rgb(10, 128, 206);
-    text-decoration: none;
-}
-a.call-footer-btn:link{
-    color: rgb(33, 48, 58);
-    text-decoration: none;
-}
-.write-footer-btn{
-    margin-left: 1vw;
-}
-a.write-copyright-btn:link, a.write-copyright-btn:visited{
-    color: rgb(33, 48, 58);
-    text-decoration: none;
-}
-.fa{
-    width: 20px;
-}
-/* END FOOTER CSS RENDERING */
-
-/* START ABOUT ME SECTION CSS RENDERING */
-.about-me-flex-container{
-    display: flex;
-    flex-direction: row;
-}
-.background{
-    content: "";
-    display: block;
-    position: fixed;
-    background: rgb(33, 48, 58);
-    height: 100vh;
-    bottom: 0;
-    left: 0;
-    width: 45vw;
-    z-index: -1;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.id-card{
-    content: "";
-    display: block;
-    width: 25vw;
-    height: 65vh;
-    margin-top: 25vh;
-    margin-left: 26vw;
-    background: rgb(45, 58, 68);
-}
-.abt-me-profile{
-    border-radius: 50%;
-    z-index: 1;
-    height: 50%;
-    width: 50%;
-    margin-top: 2.5vh;
-    margin-left: 7vw;
-}
-#card-name{
-    z-index: 1;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 2vw;
-}
-#card-line{
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-#card-title{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 1.5vw;
-}
-.content{
-    right: 0;
-    width: 30%;
-    margin-left: 2%;
-    margin-top: 6vh;
-    text-align: left;
-}
-#hello{
-    margin-left: vw;
-    font-size: 9vw;
-    margin-bottom: -2vh;
-}
-#hello-sub{
-    font-size: 3vh;
-    margin-bottom: 5vh;
-}
-.abt-res-btn{
-    background: rgb(45, 58, 68);
-    padding: 1.5vh 3vw;
-    border-radius: 17px;
-    font-size: 2.25vh;
-    text-align: center;
-    border: none;
-}
-a.abt-res-btn:link, a.abt-res-btn:visited{
-    color: rgb(255, 255, 255);
-    background: rgb(45, 58, 68);
-    text-decoration: none;
-}
-a.abt-res-btn:hover{
-    color: rgb(45, 58, 68);
-    transition: all 0.3s ease;
-    background: none;
-    border: 2px solid rgb(45, 58, 68);
-}
-.abt-proj-btn{
-    background: none;
-    padding: 1.5vh 3vw;
-    border-radius: 17px;
-    font-size: 2.25vh;
-    text-align: center;
-    border: 2px solid rgb(45, 58, 68);
-}
-a.abt-proj-btn:link, a.abt-proj-btn:visited{
-    text-decoration: none;
-    color: rgb(45, 58, 68);
-    background: none;
-}
-a.abt-proj-btn:hover{
-    background: rgb(45, 58, 68);
-    color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-    border: none;
-}
-.intro-paragraph{
-    margin-top: 5vh;
-    color: rgb(45, 58, 68);
-    width: 400px;
-    height: 200px;
-    box-sizing: border-box;
-}
-/* END ABOUT ME SECTION CSS RENDERING */
-
-/* START RESUME SECTION CSS RENDERING */
-.resume-flex-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 20px;
-}
-.picture{
-    content: "";
-    display: block;
-    position: fixed;
-    background: rgb(33, 48, 58);
-    height: 100vh;
-    width: 50vw;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.content{
-    content: "";
-    display: block;
-    height: 100vh;
-    width: 50vw;
-    width: 50%;
-    margin-top: 11vh;
-}
-.res-heading-left{
-    display: block;
-    background: rgb(33, 48, 58);
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    margin-left: 80px;
-    margin-right: 80px;
-    text-align: left;
-}
-.res-heading-right{
-    display: block;
-    background: rgb(33, 48, 58);
-    margin-left: 80px;
-    margin-right: 80px;
-    text-align: right;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-}
-.content-box{
-    margin-left: 80px;
-    margin-right: 150px;
-    border-bottom: 1px solid rgb(33, 48, 58);
-}
-#res-img{
-    border-radius: 0px;
-    z-index: 1;
-    display: block;
-    width: 20vw;
-    height: 60vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30vh;
-}
-.res-btn{
-    z-index: 1;
-    cursor: pointer;
-    background: transparent;
-    padding: 10px 45px;
-    margin-left: 13.5vw;
-    text-align: center;
-    border-radius: 17px;
-    margin-top: 17vh;
-    position: fixed;
-    border: 1px solid rgb(255, 255, 255);
-}
-a.res-btn:link, a.res-btn:visited{
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-a.res-btn:hover{
-    color: rgb(45, 58, 68);
-    cursor: pointer;
-    color: rgb(45, 58, 68);
-    background: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-}
-
-.res-footer{
-    overflow: hidden;
-    width: 85%;
-    margin-top: 2vh;
-    margin-left: 6vw;
-}
-/* END RESUME SECTION CSS RENDERING */
-
-/* START PORTFOLIO SECTION CSS RENDERING */
-.column{
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-.column img{
-    margin-top: 12px;
-}
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-/* END PORTFOLIO SECTION CSS RENDERING */
-
-/* START CONTACT ME SECTION CSS RENDERING */
-.contact-content-box{
-    text-align: center;
-    margin-top: 25vh;
-}
-#contact-title{
-    font-size: 8vh;
-}
-#contact-paragraph{
-    font-size: 2.5vh;
-    margin-bottom: 8vh;
-}
-.contact-info{
-    color: rgb(45, 58, 68);
-    font-size: 3vh;
-}
-.contact-info:hover{
-    color: rgb(10, 128, 206);
-}
-.contact-subheading{
-    font-size: 3vh;
-    padding-top: 3vh;
-}
-/* END CONTACT ME SECTION CSS RENDERING */
-
-/* START PROJECTS SECTION CSS RENDERING */
-.projects{
-    text-align: center;
-    background: yellow;
-    margin-top: 18vh;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.project-box{
-    text-align: center;
-}
-
-
-
-body{
+@media screen and (max-width: 600px) {
+    nav li{
+        display: block;
+        margin-bottom: 10px;
+    }
 }
