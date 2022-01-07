@@ -3,7 +3,7 @@ body{
 }
 .navigation{
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     padding: 50px 25px;
 }
 nav{
@@ -30,21 +30,24 @@ nav a:hover{
 }
 .navigation::before{
     content: "Roy Alexander Urbina";
-    font-size: 25px;
+    font-size: 26.5px;
     color: black;
     font-weight: 600;
     float: left;
     padding-bottom: 25px;
 }
 .navigation::after{
-    content: "/ COLLEGE STUDENT";
+    content: "/COLLEGE STUDENT";
     color: grey;
     font-size: 25px;
     font-style: italic;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav li{
         display: block;
         margin-bottom: 10px;
     }
+    .navigation::after{
+        content: "COLLEGE STUDENT";
+    }    
 }
