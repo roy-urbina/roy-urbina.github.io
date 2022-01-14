@@ -1,0 +1,406 @@
+body{
+    width: 100%;
+    background: rgb(252, 246, 245);
+}
+/* START NAVIGATION BAR */
+.navigation{
+    margin: 0 auto;
+    width: 85%;
+    padding: 50px 25px;
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    margin-top: .7vh;
+}
+nav li{
+    display: inline;
+    text-align: center;
+    margin-left: 2vw;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    color: rgb(1, 22, 56);
+}
+nav a:hover{
+    color: rgb(220, 150, 90);
+}
+.navigation::before{
+    content: "Roy Alexander Urbina";
+    font-size: 26.5px;
+    color: rgb(1, 22, 56);
+    font-weight: 600;
+    float: left;
+    padding-bottom: 25px;
+}
+.navigation::after{
+    content: "/COLLEGE STUDENT";
+    color: rgb(220, 150, 90);
+    font-size: 25px;
+    font-style: italic;
+}
+/* END NAVIGATION BAR */
+
+/* START FOOTER SECTION */
+.footer{
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+footer{
+    float: right;
+}
+footer ul{
+    font-size: 15px;
+    list-style: none;
+}
+footer li{
+    display: inline;
+    text-align: center;
+}
+footer a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(1, 22, 56);
+}
+.footer-heading{
+    font-size: 15px;
+    float: right;
+    color: rgb(1, 22, 56);
+    margin-right: 12vw;
+    padding-bottom: .75vh;
+}
+.call-footer-btn{
+    font-size: 15px;
+    float: right;
+    margin-right: 10.75vw;
+}
+.call-footer-btn:hover{
+    color: rgb(220, 150, 90);
+    transition: all 0.3 ease;
+}
+.write-footer-btn{
+    font-size: 15px;
+    float: right;
+    margin-right: 4vw;
+}
+.write-footer-btn:hover{
+    color: rgb(220, 150, 90);
+    transition: all 0.3s ease;
+}
+.fa{
+    float: right;
+    width: 20px;
+}
+.fa-instagram{
+    margin-right: 6.75vw;
+}
+.fa:hover{
+    color: rgb(220, 150, 90);
+    transition: all 0.3s ease;
+}
+#copyright{
+    margin-left: 10%;
+    color: rgb(1, 22, 56);
+}
+/* END FOOTER SECTION */
+
+/* START ABOUT ME SECTION */
+.about-me-flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.background{
+    content: "";
+    display: block;
+    position: fixed;
+    background: rgb(72, 124, 170);
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    width: 45vw;
+    z-index: -1;
+}
+.id-card{
+    content: "";
+    display: block;
+    width: 25vw;
+    height: 65vh;
+    margin-top: 5vh;
+    margin-left: 25vw;
+    background: rgb(220, 150, 90);
+}
+.abt-me-profile{
+    border-radius: 50%;
+    z-index: 1;
+    height: 50%;
+    width: 50%;
+    margin-top: 2.5vh;
+    margin-left: 6.5vw;
+}
+#card-name{
+    z-index: 1;
+    text-align: center;
+    color: rgb(1, 22, 56);
+    font-size: 2vw;
+}
+#card-line{
+    text-align: center;
+    color: rgb(1, 22, 56);
+}
+#card-title{
+    text-align: center;
+    font-size: 1.5vw;
+    color: rgb(1, 22, 56);
+}
+.content{
+    right: 0;
+    width: 30%;
+    margin-left: 2%;
+    text-align: left;
+}
+#hello{
+    margin-top: 2vh;
+    font-size: 9vw;
+    margin-bottom: 1vh;
+    color: rgb(1, 22, 56);
+}
+#hello-sub{
+    font-size: 3vh;
+    color: rgb(1, 22, 56);
+    margin-bottom: 8vh;
+}
+.abt-res-btn{
+    background: rgb(220, 150, 90);
+    color: rgb(1, 22, 56);
+    padding: 1.5vh 3vw;
+    border-radius: 17px;
+    font-size: 2vh;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+a.abt-res-btn:link, a.abt-res-btn:visited{
+    color: rgb(1, 22, 56);
+    text-decoration: none;
+}
+.abt-res-btn:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    background: none;
+    border: 2px solid rgb(220, 150, 90);
+}
+.intro-paragraph{
+    margin-top: 5vh;
+    color: rgb(1, 22, 56);
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    margin-bottom: 10vh;
+}
+/* END ABOUT ME SECTION */
+
+/* START RESUME SECTION */
+.resume-flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+    /* NAVIGATION TO MAKE ONLY RESUME SECTION FIXED */
+.navigation-res{
+    margin: 0 auto;
+    width: 85%;
+    padding: 50px 25px 0px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navigation-res::before{
+    content: "Roy Alexander Urbina";
+    font-size: 26.5px;
+    color: rgb(1, 22, 56);
+    font-weight: 600;
+    float: left;
+    padding-bottom: 25px;
+}
+.navigation-res::after{
+    content: "/COLLEGE STUDENT";
+    color: rgb(220, 150, 90);
+    font-size: 25px;
+    font-style: italic;
+}
+.picture{
+    content: "";
+    display: block;
+    position: fixed;
+    background: rgb(72, 124, 170);
+    height: 100vh;
+    width: 50vw;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#res-img{
+    border-radius: 0px;
+    z-index: 1;
+    display: block;
+    width: 25vw;
+    height: 75vh;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.res-content{
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 50vw;
+    width: 50%;
+    margin-top: 11vh;
+}
+.res-heading-left{
+    display: block;
+    background: rgb(220, 150, 90);
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
+    font-size: 4vh;
+}
+.res-heading-right{
+    display: block;
+    background: rgb(220, 150, 90);
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: right;
+}
+.res-content-box{
+    color: rgb(1, 22, 56);
+    margin-left: 80px;
+    margin-right: 150px;
+    border-bottom: 1px solid rgb(72, 124, 170);
+}
+.full-res-btn{
+    text-align: center;
+    color: rgb(1, 22, 56);
+    cursor: pointer;
+    background: rgb(220, 150, 90);
+    padding: 1vh 4vw 3vh 4vw;
+    margin-left: 10vw;
+    border-radius: 12px;
+}
+.full-res-btn:hover{
+    opacity: 0.5;
+}
+a.full-res-btn:link, a.full-res-btn:visited{
+    cursor: pointer;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    nav li{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .navigation::after{
+        content: "COLLEGE STUDENT";
+    }
+    footer{
+        display: none;
+    }
+    .about-me-flex-container{
+        flex-direction: column;
+    }
+    .background{
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+    }
+    .id-card{
+        width: 75vw;
+    }
+    .abt-me-profile{
+        margin-left: 20vw;
+    }
+    #card-name{
+        font-size: 5vw;
+    }
+    #card-title{
+        font-size: 4vw;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    #hello{
+        margin-top: 5vh;
+        font-size: 19vw;
+    }
+    #hello-sub{
+        font-size: 3vh;
+        margin-bottom: 8vh;
+    }
+    .abt-res-btn{
+        font-size: 2.5vh;
+    }
+    a.abt-res-btn:link, a.abt-res-btn:visited{
+        text-decoration: none;
+    }
+    .abt-res-btn:hover{
+        transition: all 0.3s ease;
+        background: none;
+    }
+    .intro-paragraph{
+        box-sizing: none;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 450px;
+        height: 200px;
+        margin-bottom: 10vh;
+    }
+    .navigation-res::after{
+        content: "COLLEGE STUDENT";
+    }
+    .navigation-res{
+        opacity: 0.9;
+        background: rgb(72, 124, 170);
+        margin: 0 auto;
+        margin-left: -.05vw;
+        width: 85%;
+        padding: 50px 25px 0px 25px;
+    }
+    .resume-flex-container{
+        flex-direction: column;
+    }
+    #res-img{
+        display: none;
+    }
+    .res-content{
+        margin-top: 20vh;
+        width: 85%;
+    }
+    .res-heading-left{
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .res-heading-right{
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .res-content-box{
+        margin: 0 auto;
+        border-bottom: 1px solid rgb(220, 150, 90);
+    }
+}
